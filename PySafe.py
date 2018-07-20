@@ -36,10 +36,10 @@ try:
 	{key_name} = ""
 	if sys.version[0] == '3':
 		print('[WARNING] This program is protected!')
-		{key_name} = input('[#] Please Enter the your key: ')
+		{key_name} = input('[#] Please Enter your key: ')
 	else:
 		print '[WARNING] This program is protected!'
-		{key_name} = raw_input('[#] Please Enter the your key: ')	
+		{key_name} = raw_input('[#] Please Enter your key: ')	
 	{dec_name} = {dec_value}
 	exec(zlib.decompress(str(bytearray({f_name}({dec_name},{key_name})))))
 except:
